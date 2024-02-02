@@ -18,4 +18,4 @@
   
 - Sample:
   
-  `java -jar gen-file-path.jar --target /usr/shre/code -d /usr/share/log -f FileList.txt -t linux --absolutePath`
+  `java -jar gen-file-path.jar --target /usr/share/code -d /usr/share/log -f FileList.txt -t linux --absolutePath`
