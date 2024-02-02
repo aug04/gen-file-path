@@ -48,6 +48,13 @@ public class GenFilePathApplication {
 
             final String destinationFilePath = dir + File.separator + filename;
             BufferedWriter bw = new BufferedWriter(new FileWriter(destinationFilePath, false));
+            bw.write("----------------------------------------");
+            bw.newLine();
+            bw.write("Total files: " + paths.size());
+            bw.newLine();
+            bw.write("----------------------------------------");
+            bw.newLine();
+
             final boolean separatorReplace = ("\\".equals(File.separator) && LINUX.equals(type) || ("/".equals(File.separator)) && WINDOWS.equals(type));
             String replaceWith = "";
             for (int i = 0; i < paths.size(); i++) {
